@@ -3,43 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>천안투어</title>
+    <title>천안 투 트립</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/025b7bee11.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- 헤더 -->
     <header class="header">
         <div class="innerHeader">
             <a href="index.html" class="logo">
-                <img class="logo" src="image/천안투어logo.png" alt="logo">
+                <img class="logo" src="image/천안logo.png" alt="logo">
             </a>    
             <nav class="Navigation">
                 <ul class="menu">
                     <li>
-                        <a href="#">마이페이지</a>
-                        <!-- <ul class="submenu">
-                            <li><a href="#">일반예약</a></li>
-                            <li><a href="#">월별현황 조회</a></li>
-                            <li><a href="#">영수증 출력</a></li>
-                        </ul> -->
+                        <a href="#">투어소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">독립기념관</a></li>
+                            <li><a href="#">유관순 기념관</a></li>
+                            <li><a href="#">홍대용 과학관</a></li>
+                        </ul>
                     </li>
 
                     <li>
-                        <a href="#">명소알아보기</a>
-                        <!-- <ul class="submenu">
-                            <li><a href="#">위례산 자연휴양림 소개</a></li>
-                            <li><a href="#">시설물 안내</a></li>
-                            <li><a href="#">행사 / 이벤트</a></li>
-                            <li><a href="#">오시는 길</a></li>
-                        </ul> -->
+                        <a href="#">투어정보</a>
+                        <ul class="submenu">
+                            <li><a href="#">관람정보</a></li>
+                            <li><a href="#">관람일정</a></li>
+                        </ul>
                     </li>
 
                     <li>
-                        <a href="#">셔틀버스투어</a>
-                        <!-- <ul class="submenu">
-                            <li><a href="#">예약안내</a></li>
-                            <li><a href="#">시설 이용 안내</a></li>
-                        </ul> -->
+                        <a href="#">투어추천</a>
+                        <ul class="submenu">
+                            <li><a href="#">투어예약</a></li>
+                            <li><a href="#">투어추천</a></li>
+                            <li><a href="#">추천 영상 등록</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">투어후기</a>
+                        <ul class="submenu">
+                            <li><a href="#">후기게시판</a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -51,23 +58,81 @@
     </header>
     <!-- visual 영역 -->
     <section class="visual">
-        <div class="visual-wrap">
-            <div class="visual-img"><img src="image/3.jpg" alt=""></div>
-            <div class="visual-txt">
-                <p>
-                    A place of Enjoyment!
-                    you can experience excitement, 
-                    inspiration and hamony through the local festiveals!
-                </p>  
+
+        <div class="slidebox">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+            <ul class="slidelist">
+                <li class="slideitem">
+                    <div>
+                        <label for="slide03" class="left"></label>
+                        <label for="slide02" class="right"></label>
+                        <a href="#"><img src="image/image6.png" alt=""></a>
+                    </div>
+                </li>
+                <li class="slideitem">
+                    <div>
+                        <label for="slide01" class="left"></label>
+                        <label for="slide03" class="right"></label>
+                        <a href="#"><img src="image/image23.jpg" alt=""></a>
+                    </div>
+                </li>
+                <li class="slideitem">
+                    <div>
+                        <label for="slide02" class="left"></label>
+                        <label for="slide01" class="right"></label>
+                        <a href="#"><img src="image/image24.jpg" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- 통계차트 -->
+
+    <section class="statistics">
+        <div class="chart">
+            <input type="radio" name="tabs" id="circular" checked>
+            <input type="radio" name="tabs" id="bar">
+
+            <div class="tabs">
+                <label for="circular">circle graph</label>
+                <label for="bar">bar graph</label>
             </div>
+
+            <div class="circular">
+                <div class="pie-chart">
+                    <div class="pie-chart-fake"></div>
+                </div>
+            </div>
+            
+            <div class="bar">
+                <div class="bar-chart">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
         </div>
     </section>
 
+
+<!-- 푸터영역 -->
 <footer>
+    <div class="fotlogo"><a href="index.html"><img src="image/천안logo.png" alt="logo"></a></div>
     <div>
-        Call: 1422-36 |   Email: help@cheonan.tour |
-        Address: (31162) 충남 천안시 서북구 번영로 156 <br>
-        <p>Copyrightⓒ Cheonan-Si. All rights reserved.</p>
+        이용약관 | 개인정보처리방침 | 고객센터 | 청소년 보호정책 | 도로명 주소안내
+        충청북도 음성군 금왕읍 무극로 393-1<br>
+        <p>COPYRIGHTⓒ 2023 Cheonan City To Trip</p>
+    </div>
+    <div class="social">
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-facebook"></i>
     </div>
 </footer> 
 </body>
