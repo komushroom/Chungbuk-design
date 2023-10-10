@@ -20,10 +20,11 @@ header{
     width: 100%;
     display: flex;
     z-index: 99;
-    background-color: #ffffff;
+    background-color: #adb5bd;
     opacity: 1;
-    
 }
+
+
 .innerHeader{
     display: flex;
     width: 100%;
@@ -72,7 +73,7 @@ header{
 
 .menu > li:hover > a {
     /* background-color: #ff0303; */
-    color: #43d413;
+    color: #fff;
 }
 
 .submenu {
@@ -102,7 +103,7 @@ li:hover .submenu {
 }
 
 .submenu li > a:hover {
-    background-color: #3aca24;
+    background-color: #6c757d;
     color: #fff;
 }
 
@@ -127,7 +128,7 @@ li:hover .submenu {
 .menus > input {
     height: 30px;
     width: 60px;
-    background-color: #3aca24; /* 버튼 배경색 변경 */
+    background-color: #495057; /* 버튼 배경색 변경 */
     color: #fff; /* 버튼 텍스트 색상 변경 */
     cursor: pointer;
     font-weight: 500;
@@ -140,10 +141,13 @@ li:hover .submenu {
 
 /* 버튼 hover */
 .menus > input:hover {
-    background-color: #02ff17;
+    background-color: #dee2e6;
     color: #000;
     
 }
+
+
+
 
 /* 포스터영역 */
 
@@ -155,46 +159,55 @@ li:hover .submenu {
 .post{
     display: flex;
     flex-direction: column;
-    color: #e9dcdc;     
+    /* color: #e9dcdc;      */
+    color: #000;
     
 }
 .post > h1{
     font-size: 30px;
     margin-bottom: 30px;
-    color: #fff;
+    color: #cf0303;
 }
+
+
 
 /* 포스터이미지 영역 */
 .poster{
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    border: solid 1px ;
+    border: solid 15px #582f0e;
     padding: 40px;
-    color: #e9dcdc; 
+    /* color: #e9dcdc;  */
 }
 .poster > li > ul > img{
-    width: 250px;
+    width: 350px;
     height: 350px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .poster_tab{
     display: inline-block;
     align-items: center;
     justify-content: center;
-    
+    width: 350px;
+    height: 100%;
+    padding-top: 25px;
+    border: solid 3px #a68a64;
 }
 .poster_tab > p{
+    display: flex;
     margin-top: 20px;
     font-weight: 500;
-    
+    color: #000;
+    align-items: center;
+    justify-content: center;
 }
 
 .conbox > h1{
     font-size: 30px;
     margin-bottom: 50px;
-    color: #fff;
+    color: #724848;
     text-align: center;
 }
 
@@ -209,7 +222,7 @@ input[type="radio"]{display: none;}
     height: auto;
     padding: 50px;
     /* max-height: ; */
-    background-color: #282525;  
+    background-color: #f5f5f5;  
     margin: 0 auto;
     line-height: 28px;
 }
@@ -249,7 +262,7 @@ input[id="tab02"]:checked ~.btn > .tab2 {
 .plus{margin-top: 20px;}
 
 .plus > a{
-    color: #2cc345;
+    color: #4361ee;
 }
 
 label[for*="tab"]{
@@ -273,9 +286,11 @@ input[id="tab02"]:checked ~ .con2{
 
 /* 푸터영역 */
 
+
+
 footer{
-    color: white;
-    background-color: #000000;
+    color: #f5f5f5;
+    background-color: #191919;
     width: 100%;
     line-height: 40px;
     bottom: 0;
@@ -283,6 +298,7 @@ footer{
     position: relative;
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 20px;
     /* margin-top: 200px; */
 }
 
